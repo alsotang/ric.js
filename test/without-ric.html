@@ -1,0 +1,34 @@
+<html>
+<head>
+
+</head>
+<body>
+<p>counter would stop when heavy work is doing.</p>
+<p class="time-counter">0</p>
+
+<p class="result">result</p>
+
+
+<script src="../ric.js"></script>
+<script>
+
+  var timeCounter = 0;
+  var timeCounterDom = document.querySelector('.time-counter');
+  setInterval(function () {
+    timeCounterDom.innerHTML = timeCounter++;
+  }, 10);
+
+
+  setTimeout(function () {
+    var max = 1000000000;
+    var count = 0;
+    while (count < max) {
+      count++;
+    }
+
+    document.querySelector('.result').innerHTML = count;
+  }, 3000);
+
+</script>
+</body>
+</html>

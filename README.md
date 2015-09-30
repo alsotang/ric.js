@@ -2,6 +2,8 @@
 
 **[requestIdleCallback](https://developers.google.com/web/updates/2015/08/27/using-requestidlecallback)** experiment
 
+Execute heavy computing work, but do not block the browser.
+
 
 ## example
 

@@ -7,7 +7,7 @@ Execute heavy computing work, but do not block the browser.
 
 ## example
 
-without `ric`
+without `ric`, and block
 
 ```js
 var max = 1000000000;
@@ -19,7 +19,7 @@ while (count < max) {
 document.querySelector('.result').innerHTML = count;
 ```
 
-with `ric`
+with `ric`, and not block 
 
 ```js
 var max = 1000000000;
